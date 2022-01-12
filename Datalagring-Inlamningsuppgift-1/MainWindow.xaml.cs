@@ -24,5 +24,10 @@ namespace Datalagring_Inlamningsuppgift_1
         {
             InitializeComponent();
         }
+
+        private void submitButton_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show($"Customer {firstNameText.Text} {lastNameText.Text} has been added!");
+        }
     }
 }
