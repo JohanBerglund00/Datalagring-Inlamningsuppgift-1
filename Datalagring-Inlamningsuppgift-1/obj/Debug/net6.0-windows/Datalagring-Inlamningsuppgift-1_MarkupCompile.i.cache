@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\EC\Datalagring.NET\Datalagring-Inlamningsuppgift-1\Datalagring-Inlamningsuppgift-1\App.xaml
-11407045341
+2-531959981
 
-5-1256774518
+7-477403500
 194-164764702
-MainWindow.xaml;
+MainWindow.xaml;Views\RegisterCustomerView.xaml;
 
-False
+True
 
