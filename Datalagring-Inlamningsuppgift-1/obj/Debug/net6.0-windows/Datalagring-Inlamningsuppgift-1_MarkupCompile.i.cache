@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\EC\Datalagring.NET\Datalagring-Inlamningsuppgift-1\Datalagring-Inlamningsuppgift-1\App.xaml
-2-531959981
+3970943948
 
-7-477403500
+9-1139571806
 194-164764702
-MainWindow.xaml;Views\RegisterCustomerView.xaml;
+MainWindow.xaml;Views\RegisterCustomerView.xaml;Views\RegisterErrandView.xaml;
 
-True
+False
 

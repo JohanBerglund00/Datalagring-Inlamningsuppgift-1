@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Datalagring_Inlamningsuppgift_1.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -28,6 +29,16 @@ namespace Datalagring_Inlamningsuppgift_1
         private void submitButton_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show($"Customer {firstNameText.Text} {lastNameText.Text} has been added!");
+        }
+
+        private void registerCustomerButton_Click(object sender, RoutedEventArgs e)
+        {
+            DataContext = new RegisterCustomerModel();
+        }
+
+        private void registerErrandButton_Click(object sender, RoutedEventArgs e)
+        {
+            DataContext = new RegisterErrandModel();
         }
     }
 }

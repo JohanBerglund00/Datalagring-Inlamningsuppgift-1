@@ -8,5 +8,6 @@ namespace Datalagring_Inlamningsuppgift_1.ViewModels
 {
     internal class RegisterCustomerModel
     {
+
     }
 }

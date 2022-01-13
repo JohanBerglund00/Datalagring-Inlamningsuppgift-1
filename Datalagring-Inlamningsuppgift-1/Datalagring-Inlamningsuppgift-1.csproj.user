@@ -10,12 +10,18 @@
     <Compile Update="Views\RegisterCustomerView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\RegisterErrandView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\RegisterCustomerView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\RegisterErrandView.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

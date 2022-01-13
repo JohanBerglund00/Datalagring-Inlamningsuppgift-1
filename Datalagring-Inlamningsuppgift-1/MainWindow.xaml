@@ -9,8 +9,15 @@
         mc:Ignorable="d"
         Title="Inlämningsuppgift 1" Height="900" Width="1200">
     <Window.Resources>
-        <DataTemplate x:Name="registerCustomerTemplate" />
+        <DataTemplate x:Name="registerCustomerTemplate" DataType="{x:Type viewmodels:RegisterCustomerModel}">
+            <views:RegisterCustomerView DataContext="{Binding}" />
+        </DataTemplate>
+        
+        <DataTemplate x:Name="registerErrandTemplate" DataType="{x:Type viewmodels:RegisterErrandModel}">
+            <views:RegisterErrandView DataContext="{Binding}" />
+        </DataTemplate>
     </Window.Resources>
+    
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="200"/>
@@ -27,13 +34,14 @@
             <RowDefinition Height="10,8"/>
         </Grid.RowDefinitions>
         
-        <DockPanel Background="Gray" Grid.Row="0" Grid.Column="0" Grid.RowSpan="8"></DockPanel>
-        <DockPanel Background="LightGray" Grid.Row="0" Grid.Column="1" Grid.RowSpan="8"></DockPanel>
-
-        <StackPanel>
-            <Button x:Name="registerCustomerButton" Grid.Row="0" Grid.Column="0" Margin="10,10,10,10" HorizontalContentAlignment="Center" FontSize="30" Background="LightSteelBlue" BorderBrush="Black" BorderThickness="3" Content="Registrera&#10; ny kund" />
-            <Button x:Name="registerErrand" Grid.Row="1" Grid.Column="0" Margin="10,10,10,10" HorizontalContentAlignment="Center" FontSize="30" Background="LightSteelBlue" BorderBrush="Black" BorderThickness="3" Content="Registrera&#10; nytt ärende" />
-        </StackPanel>
+        <DockPanel Background="Gray" Grid.Row="0" Grid.Column="0" Grid.RowSpan="8">
+            <StackPanel>
+                <Button x:Name="registerCustomerButton" Grid.Row="0" Grid.Column="0" Margin="10,10,10,10" HorizontalContentAlignment="Center" FontSize="30" Background="LightSteelBlue" BorderBrush="Black" BorderThickness="3" Content="Registrera&#10; ny kund" Click="registerCustomerButton_Click" />
+                <Button x:Name="registerErrandButton" Grid.Row="1" Grid.Column="0" Margin="10,10,10,10" HorizontalContentAlignment="Center" FontSize="30" Background="LightSteelBlue" BorderBrush="Black" BorderThickness="3" Content="Registrera&#10; nytt ärende" Click="registerErrandButton_Click" />
+            </StackPanel>
+        </DockPanel>
+        <DockPanel Background="LightGray" Grid.Row="0" Grid.Column="1" Grid.RowSpan="8">
+</DockPanel>
 
         <TextBlock Grid.Row="0" Grid.Column="1" Margin="10,10,10,10" Padding="30,10" FontSize="30">Efternamn:</TextBlock>
 

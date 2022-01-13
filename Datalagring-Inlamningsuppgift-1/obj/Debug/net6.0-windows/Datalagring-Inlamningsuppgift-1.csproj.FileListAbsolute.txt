@@ -4,7 +4,6 @@ C:\EC\Datalagring.NET\Datalagring-Inlamningsuppgift-1\Datalagring-Inlamningsuppg
 C:\EC\Datalagring.NET\Datalagring-Inlamningsuppgift-1\Datalagring-Inlamningsuppgift-1\bin\Debug\net6.0-windows\Datalagring-Inlamningsuppgift-1.dll
 C:\EC\Datalagring.NET\Datalagring-Inlamningsuppgift-1\Datalagring-Inlamningsuppgift-1\bin\Debug\net6.0-windows\ref\Datalagring-Inlamningsuppgift-1.dll
 C:\EC\Datalagring.NET\Datalagring-Inlamningsuppgift-1\Datalagring-Inlamningsuppgift-1\bin\Debug\net6.0-windows\Datalagring-Inlamningsuppgift-1.pdb
-C:\EC\Datalagring.NET\Datalagring-Inlamningsuppgift-1\Datalagring-Inlamningsuppgift-1\obj\Debug\net6.0-windows\Datalagring-Inlamningsuppgift-1.csproj.AssemblyReference.cache
 C:\EC\Datalagring.NET\Datalagring-Inlamningsuppgift-1\Datalagring-Inlamningsuppgift-1\obj\Debug\net6.0-windows\MainWindow.g.cs
 C:\EC\Datalagring.NET\Datalagring-Inlamningsuppgift-1\Datalagring-Inlamningsuppgift-1\obj\Debug\net6.0-windows\App.g.cs
 C:\EC\Datalagring.NET\Datalagring-Inlamningsuppgift-1\Datalagring-Inlamningsuppgift-1\obj\Debug\net6.0-windows\Datalagring-Inlamningsuppgift-1_MarkupCompile.cache
@@ -19,3 +18,8 @@ C:\EC\Datalagring.NET\Datalagring-Inlamningsuppgift-1\Datalagring-Inlamningsuppg
 C:\EC\Datalagring.NET\Datalagring-Inlamningsuppgift-1\Datalagring-Inlamningsuppgift-1\obj\Debug\net6.0-windows\ref\Datalagring-Inlamningsuppgift-1.dll
 C:\EC\Datalagring.NET\Datalagring-Inlamningsuppgift-1\Datalagring-Inlamningsuppgift-1\obj\Debug\net6.0-windows\Datalagring-Inlamningsuppgift-1.pdb
 C:\EC\Datalagring.NET\Datalagring-Inlamningsuppgift-1\Datalagring-Inlamningsuppgift-1\obj\Debug\net6.0-windows\Datalagring-Inlamningsuppgift-1.genruntimeconfig.cache
+C:\EC\Datalagring.NET\Datalagring-Inlamningsuppgift-1\Datalagring-Inlamningsuppgift-1\obj\Debug\net6.0-windows\Views\RegisterCustomerView.g.cs
+C:\EC\Datalagring.NET\Datalagring-Inlamningsuppgift-1\Datalagring-Inlamningsuppgift-1\obj\Debug\net6.0-windows\Views\RegisterCustomerView.baml
+C:\EC\Datalagring.NET\Datalagring-Inlamningsuppgift-1\Datalagring-Inlamningsuppgift-1\obj\Debug\net6.0-windows\Views\RegisterErrandView.g.cs
+C:\EC\Datalagring.NET\Datalagring-Inlamningsuppgift-1\Datalagring-Inlamningsuppgift-1\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\EC\Datalagring.NET\Datalagring-Inlamningsuppgift-1\Datalagring-Inlamningsuppgift-1\obj\Debug\net6.0-windows\Views\RegisterErrandView.baml
