@@ -8,27 +8,43 @@
              d:DesignHeight="900" d:DesignWidth="1200">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="275"/>
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="10,8"/>
-            <RowDefinition Height="10,8"/>
-            <RowDefinition Height="10,8"/>
-            <RowDefinition Height="10,8"/>
-            <RowDefinition Height="10,8"/>
-            <RowDefinition Height="10,8"/>
-            <RowDefinition Height="10,8"/>
-            <RowDefinition Height="10,8"/>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" Margin="50,0,0,0" FontSize="30">Förnamn:</TextBlock>
+        <TextBox x:Name="firstNameText" Grid.Row="0" Grid.Column="1" Width="700" Height="50" Padding="10,3,0,0" FontSize="30" />
+
+        <TextBlock Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" Margin="50,0,0,0" FontSize="30">Efternamn:</TextBlock>
+        <TextBox x:Name="lastNameText" Grid.Row="1" Grid.Column="1" Width="700" Height="50" Padding="10,3,0,0" FontSize="30" />
+
+        <TextBlock Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" Margin="50,0,0,0" FontSize="30">Email:</TextBlock>
+        <TextBox x:Name="emailText" Grid.Row="2" Grid.Column="1" Width="700" Height="50" Padding="10,3,0,0" FontSize="30" />
+
+        <TextBlock Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" Margin="50,0,0,0" FontSize="30">Telefonnummer:</TextBlock>
+        <TextBox x:Name="phoneNumberText" Grid.Row="3" Grid.Column="1" Width="700" Height="50" Padding="10,3,0,0" FontSize="30" />
+
+        <TextBlock Grid.Row="4" Grid.Column="0" VerticalAlignment="Center" Margin="50,0,0,0" FontSize="30">Adress:</TextBlock>
+        <TextBox x:Name="addressText" Grid.Row="4" Grid.Column="1" Width="700" Height="50" Padding="10,3,0,0" FontSize="30" />
+
+        <TextBlock Grid.Row="5" Grid.Column="0" VerticalAlignment="Center" Margin="50,0,0,0" FontSize="30">Postnummer:</TextBlock>
+        <TextBox x:Name="postNumberText" Grid.Row="5" Grid.Column="1" Width="700" Height="50" Padding="10,3,0,0" FontSize="30" />
+
+        <TextBlock Grid.Row="6" Grid.Column="0" VerticalAlignment="Center" Margin="50,0,0,0" FontSize="30">Stad:</TextBlock>
+        <TextBox x:Name="cityText" Grid.Row="6" Grid.Column="1" Width="700" Height="50" Padding="10,3,0,0" FontSize="30" />
+
+        <Button x:Name="submitButton" Grid.Row="7" Grid.Column="1" Width="400" Height="100" VerticalAlignment="Center" FontSize="30" Content="Submit" Click="submitButton_Click" />
         
-        <TextBlock Grid.Row="0" Grid.Column="1" Margin="10,10,10,10" Padding="30,10" FontSize="30">Efternamn:</TextBlock>
-
-        <TextBox x:Name="firstNameText" Grid.Row="0" Grid.Column="1" Width="700" Height="50" Margin="125,0,0,0" Padding="10,3,0,0" FontSize="30" />
-
-        <TextBlock Grid.Row="1" Grid.Column="1" Margin="10,10,10,10" Padding="30,10" FontSize="30">Förnamn:</TextBlock>
-
-        <TextBox x:Name="lastNameText" Grid.Row="1" Grid.Column="1" Width="700" Height="50" Margin="125,0,0,0" Padding="10,3,0,0" FontSize="30" />
-
+        
     </Grid>
 </UserControl>

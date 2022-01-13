@@ -24,5 +24,9 @@ namespace Datalagring_Inlamningsuppgift_1.Views
         {
             InitializeComponent();
         }
+        private void submitButton_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show($"{firstNameText.Text} {lastNameText.Text} har lagts till!");
+        }
     }
 }
