@@ -16,17 +16,13 @@ using System.Windows.Shapes;
 namespace Datalagring_Inlamningsuppgift_1.Views
 {
     /// <summary>
-    /// Interaction logic for RegisterCustomerView.xaml
+    /// Interaction logic for ErrandListView.xaml
     /// </summary>
-    public partial class RegisterCustomerView : UserControl
+    public partial class ErrandListView : UserControl
     {
-        public RegisterCustomerView()
+        public ErrandListView()
         {
             InitializeComponent();
-        }
-        private void submitButton_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show($"{firstNameText.Text} {lastNameText.Text} har lagts till i kundlistan!");
         }
     }
 }

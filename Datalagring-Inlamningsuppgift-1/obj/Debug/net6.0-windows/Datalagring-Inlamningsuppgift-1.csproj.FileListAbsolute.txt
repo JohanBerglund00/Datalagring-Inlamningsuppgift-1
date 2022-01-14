@@ -23,3 +23,7 @@ C:\EC\Datalagring.NET\Datalagring-Inlamningsuppgift-1\Datalagring-Inlamningsuppg
 C:\EC\Datalagring.NET\Datalagring-Inlamningsuppgift-1\Datalagring-Inlamningsuppgift-1\obj\Debug\net6.0-windows\Views\RegisterErrandView.g.cs
 C:\EC\Datalagring.NET\Datalagring-Inlamningsuppgift-1\Datalagring-Inlamningsuppgift-1\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
 C:\EC\Datalagring.NET\Datalagring-Inlamningsuppgift-1\Datalagring-Inlamningsuppgift-1\obj\Debug\net6.0-windows\Views\RegisterErrandView.baml
+C:\EC\Datalagring.NET\Datalagring-Inlamningsuppgift-1\Datalagring-Inlamningsuppgift-1\obj\Debug\net6.0-windows\Views\CustomerListView.g.cs
+C:\EC\Datalagring.NET\Datalagring-Inlamningsuppgift-1\Datalagring-Inlamningsuppgift-1\obj\Debug\net6.0-windows\Views\ErrandListView.g.cs
+C:\EC\Datalagring.NET\Datalagring-Inlamningsuppgift-1\Datalagring-Inlamningsuppgift-1\obj\Debug\net6.0-windows\Views\CustomerListView.baml
+C:\EC\Datalagring.NET\Datalagring-Inlamningsuppgift-1\Datalagring-Inlamningsuppgift-1\obj\Debug\net6.0-windows\Views\ErrandListView.baml

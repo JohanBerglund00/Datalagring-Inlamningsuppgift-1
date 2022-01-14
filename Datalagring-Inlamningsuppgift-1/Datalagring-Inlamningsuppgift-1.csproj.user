@@ -7,6 +7,12 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Views\CustomerListView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\ErrandListView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\RegisterCustomerView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -16,6 +22,12 @@
   </ItemGroup>
   <ItemGroup>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\CustomerListView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ErrandListView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\RegisterCustomerView.xaml">

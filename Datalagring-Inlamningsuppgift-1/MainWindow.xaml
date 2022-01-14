@@ -16,6 +16,14 @@
         <DataTemplate x:Name="registerErrandTemplate" DataType="{x:Type viewmodels:RegisterErrandModel}">
             <views:RegisterErrandView DataContext="{Binding}" />
         </DataTemplate>
+
+        <DataTemplate x:Name="customerListTemplate" DataType="{x:Type viewmodels:CustomerListModel}">
+            <views:CustomerListView DataContext="{Binding}" />
+        </DataTemplate>
+
+        <DataTemplate x:Name="errandListTemplate" DataType="{x:Type viewmodels:ErrandListModel}">
+            <views:ErrandListView DataContext="{Binding}" />
+        </DataTemplate>
     </Window.Resources>
     
     <Grid>
@@ -38,8 +46,10 @@
         
         <DockPanel Background="Gray" Grid.Row="0" Grid.Column="0" Grid.RowSpan="8">
             <StackPanel>
-                <Button x:Name="registerCustomerButton" Grid.Row="0" Grid.Column="0" Margin="10,10,10,10" HorizontalContentAlignment="Center" FontSize="30" Background="LightSteelBlue" BorderBrush="Black" BorderThickness="3" Content="Registrera&#10; ny kund" Click="registerCustomerButton_Click" />
-                <Button x:Name="registerErrandButton" Grid.Row="1" Grid.Column="0" Margin="10,10,10,10" HorizontalContentAlignment="Center" FontSize="30" Background="LightSteelBlue" BorderBrush="Black" BorderThickness="3" Content="Registrera&#10; nytt ärende" Click="registerErrandButton_Click" />
+                <Button x:Name="registerCustomerButton" Grid.Row="0" Grid.Column="0" Height="125" Margin="10,10" HorizontalContentAlignment="Center" FontSize="30" Background="LightSteelBlue" BorderBrush="Black" BorderThickness="3" Content="Registrera&#10; ny kund" Click="registerCustomerButton_Click" />
+                <Button x:Name="registerErrandButton" Grid.Row="1" Grid.Column="0" Height="125" Margin="10,10" HorizontalContentAlignment="Center" FontSize="30" Background="LightSteelBlue" BorderBrush="Black" BorderThickness="3" Content="Registrera&#10;nytt ärende" Click="registerErrandButton_Click" />
+                <Button x:Name="customerListButton" Grid.Row="2" Grid.Column="0" Height="125" Margin="10,10" HorizontalContentAlignment="Center" FontSize="30" Background="LightSteelBlue" BorderBrush="Black" BorderThickness="3" Content="Kundlista" Click="customerListButton_Click" />
+                <Button x:Name="errandListButton" Grid.Row="3" Grid.Column="0" Height="125" Margin="10,10" HorizontalContentAlignment="Center" FontSize="30" Background="LightSteelBlue" BorderBrush="Black" BorderThickness="3" Content="Ärendelista" Click="errandListButton_Click" />
             </StackPanel>
         </DockPanel>
         <DockPanel Background="LightGray" Grid.Column="1" Grid.RowSpan="8">

@@ -34,5 +34,16 @@ namespace Datalagring_Inlamningsuppgift_1
         {
             DataContext = new RegisterErrandModel();
         }
+
+        private void customerListButton_Click(object sender, RoutedEventArgs e)
+        {
+            DataContext = new CustomerListModel();
+        }
+
+        private void errandListButton_Click(object sender, RoutedEventArgs e)
+        {
+            DataContext = new ErrandListModel();
+        }
+
     }
 }
