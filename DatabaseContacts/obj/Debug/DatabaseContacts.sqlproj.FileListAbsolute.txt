@@ -1,0 +1,6 @@
+C:\EC\Datalagring.NET\Datalagring-Inlamningsuppgift-1\DatabaseContacts\bin\Debug\DatabaseContacts.dacpac
+C:\EC\Datalagring.NET\Datalagring-Inlamningsuppgift-1\DatabaseContacts\bin\Debug\DatabaseContacts.dll
+C:\EC\Datalagring.NET\Datalagring-Inlamningsuppgift-1\DatabaseContacts\bin\Debug\DatabaseContacts.pdb
+C:\EC\Datalagring.NET\Datalagring-Inlamningsuppgift-1\DatabaseContacts\obj\Debug\DatabaseContacts.sqlproj.AssemblyReference.cache
+C:\EC\Datalagring.NET\Datalagring-Inlamningsuppgift-1\DatabaseContacts\obj\Debug\DatabaseContacts.dll
+C:\EC\Datalagring.NET\Datalagring-Inlamningsuppgift-1\DatabaseContacts\obj\Debug\DatabaseContacts.pdb

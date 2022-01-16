@@ -5,7 +5,12 @@
       "ProjectGuid": "b6d99214-733c-4996-a87c-bea2c0f11592",
       "DisplayName": "Datalagring-Inlamningsuppgift-1",
       "ColorIndex": 0
+    },
+    "21c4d9ad-1ac6-4a5e-9259-aa1b796d1d34": {
+      "ProjectGuid": "21c4d9ad-1ac6-4a5e-9259-aa1b796d1d34",
+      "DisplayName": "DatabaseContacts",
+      "ColorIndex": 1
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 2
 }
