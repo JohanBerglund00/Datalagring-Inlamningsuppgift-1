@@ -27,7 +27,6 @@ C:\EC\Datalagring.NET\Datalagring-Inlamningsuppgift-1\Datalagring-Inlamningsuppg
 C:\EC\Datalagring.NET\Datalagring-Inlamningsuppgift-1\Datalagring-Inlamningsuppgift-1\obj\Debug\net6.0-windows\Views\ErrandListView.g.cs
 C:\EC\Datalagring.NET\Datalagring-Inlamningsuppgift-1\Datalagring-Inlamningsuppgift-1\obj\Debug\net6.0-windows\Views\CustomerListView.baml
 C:\EC\Datalagring.NET\Datalagring-Inlamningsuppgift-1\Datalagring-Inlamningsuppgift-1\obj\Debug\net6.0-windows\Views\ErrandListView.baml
-C:\EC\Datalagring.NET\Datalagring-Inlamningsuppgift-1\Datalagring-Inlamningsuppgift-1\obj\Debug\net6.0-windows\Datalagring-Inlamningsuppgift-1.csproj.AssemblyReference.cache
 C:\EC\Datalagring.NET\Datalagring-Inlamningsuppgift-1\Datalagring-Inlamningsuppgift-1\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
 C:\EC\Datalagring.NET\Datalagring-Inlamningsuppgift-1\Datalagring-Inlamningsuppgift-1\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
 C:\EC\Datalagring.NET\Datalagring-Inlamningsuppgift-1\Datalagring-Inlamningsuppgift-1\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll

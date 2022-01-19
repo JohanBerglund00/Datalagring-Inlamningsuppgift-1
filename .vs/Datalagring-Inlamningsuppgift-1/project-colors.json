@@ -10,6 +10,11 @@
       "ProjectGuid": "21c4d9ad-1ac6-4a5e-9259-aa1b796d1d34",
       "DisplayName": "DatabaseContacts",
       "ColorIndex": 1
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
     }
   },
   "NextColorIndex": 2
