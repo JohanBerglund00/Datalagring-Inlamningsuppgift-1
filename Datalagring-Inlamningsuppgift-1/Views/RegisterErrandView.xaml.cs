@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using ErrandModel.ErrandsModels;
+using ErrandModel.ErrandsLogic;
 
 namespace Datalagring_Inlamningsuppgift_1.Views
 {
@@ -20,6 +22,8 @@ namespace Datalagring_Inlamningsuppgift_1.Views
     /// </summary>
     public partial class RegisterErrandView : UserControl
     {
+        CustomerLogic _customerLogic = new CustomerLogic();
+
         public RegisterErrandView()
         {
             InitializeComponent();
@@ -27,7 +31,10 @@ namespace Datalagring_Inlamningsuppgift_1.Views
 
         private void submitButton_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Ärendet har lagts till i ärendelistan!");
+            if(int.TryParse(customerText.Text, out int id))
+            {
+                errandIdValue.Content = _customerLogic.AddErrand(id, errandNameText.Text, descriptionText.Text).ToString();
+            }
         }
     }
 }

@@ -1,0 +1,14 @@
+C:\EC\Datalagring.NET\Datalagring-Inlamningsuppgift-1\ErrandModel\bin\Debug\net6.0\ErrandModel.deps.json
+C:\EC\Datalagring.NET\Datalagring-Inlamningsuppgift-1\ErrandModel\bin\Debug\net6.0\ErrandModel.runtimeconfig.json
+C:\EC\Datalagring.NET\Datalagring-Inlamningsuppgift-1\ErrandModel\bin\Debug\net6.0\ErrandModel.dll
+C:\EC\Datalagring.NET\Datalagring-Inlamningsuppgift-1\ErrandModel\bin\Debug\net6.0\ref\ErrandModel.dll
+C:\EC\Datalagring.NET\Datalagring-Inlamningsuppgift-1\ErrandModel\bin\Debug\net6.0\ErrandModel.pdb
+C:\EC\Datalagring.NET\Datalagring-Inlamningsuppgift-1\ErrandModel\obj\Debug\net6.0\ErrandModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\EC\Datalagring.NET\Datalagring-Inlamningsuppgift-1\ErrandModel\obj\Debug\net6.0\ErrandModel.AssemblyInfoInputs.cache
+C:\EC\Datalagring.NET\Datalagring-Inlamningsuppgift-1\ErrandModel\obj\Debug\net6.0\ErrandModel.AssemblyInfo.cs
+C:\EC\Datalagring.NET\Datalagring-Inlamningsuppgift-1\ErrandModel\obj\Debug\net6.0\ErrandModel.csproj.CoreCompileInputs.cache
+C:\EC\Datalagring.NET\Datalagring-Inlamningsuppgift-1\ErrandModel\obj\Debug\net6.0\ErrandModel.dll
+C:\EC\Datalagring.NET\Datalagring-Inlamningsuppgift-1\ErrandModel\obj\Debug\net6.0\ref\ErrandModel.dll
+C:\EC\Datalagring.NET\Datalagring-Inlamningsuppgift-1\ErrandModel\obj\Debug\net6.0\ErrandModel.pdb
+C:\EC\Datalagring.NET\Datalagring-Inlamningsuppgift-1\ErrandModel\obj\Debug\net6.0\ErrandModel.genruntimeconfig.cache
+C:\EC\Datalagring.NET\Datalagring-Inlamningsuppgift-1\ErrandModel\obj\Debug\net6.0\ErrandModel.csproj.AssemblyReference.cache

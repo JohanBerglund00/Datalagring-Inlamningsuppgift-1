@@ -7,6 +7,9 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-            
+        <ListBox Name="customerList"/>
+        <Button Name="customerSearchBtn" Width="400" Height="100" VerticalAlignment="Top" FontSize="50" Content="Sök" Click="customerSearchBtn_Click"/>
+        <TextBox Name="customerSearchValue" Width="500" Height="100"></TextBox>
+        <Button Name="customerAllBtn" Width="400" Height="100" VerticalAlignment="Bottom" FontSize="50" Content="Hämta alla kunder" Click="customerAllBtn_Click"/>
     </Grid>
 </UserControl>

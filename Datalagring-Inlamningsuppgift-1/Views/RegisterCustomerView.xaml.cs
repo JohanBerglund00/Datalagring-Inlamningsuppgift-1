@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Data.SqlClient;
+using ErrandModel.ErrandsLogic;
 
 namespace Datalagring_Inlamningsuppgift_1.Views
 {
@@ -27,32 +28,9 @@ namespace Datalagring_Inlamningsuppgift_1.Views
         }
         private void submitCustomerButton_Click(object sender, RoutedEventArgs e)
         {
+            CustomerLogic customerLogic = new CustomerLogic();
+            customerIdValue.Content = customerLogic.AddCustomer(firstNameText.Text, lastNameText.Text, addressText.Text, postNumberText.Text, cityText.Text, phoneNumberText.Text, emailText.Text);
             // MessageBox.Show($"{firstNameText.Text} {lastNameText.Text} har lagts till i kundlistan!");
-
-            SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-
-            builder.DataSource = @"(localdb)\MSSQLLocalDB";
-            builder.InitialCatalog = "DatabaseContacts";
-
-            using (SqlConnection connection = new(builder.ConnectionString))
-            {
-               connection.Open();
-            string sql = "SELECT * FROM ErrandsStatus WHERE Id = 1";
-
-                using (SqlCommand command = new SqlCommand(sql, connection))
-                {
-                    using (SqlDataReader reader = command.ExecuteReader())
-                    {
-                       
-                        while (reader.Read())
-                        {
-                            MessageBox.Show("{0} {1}", reader.GetString(0));
-                        }
-                    }
-                }
-            }
-
-             
         }
         }
 

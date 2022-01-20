@@ -1,0 +1,5 @@
+C:\EC\Datalagring.NET\Datalagring-Inlamningsuppgift-1\ErrandsDatabase\bin\Debug\ErrandsDatabase.dacpac
+C:\EC\Datalagring.NET\Datalagring-Inlamningsuppgift-1\ErrandsDatabase\obj\Debug\ErrandsDatabase.dll
+C:\EC\Datalagring.NET\Datalagring-Inlamningsuppgift-1\ErrandsDatabase\obj\Debug\ErrandsDatabase.pdb
+C:\EC\Datalagring.NET\Datalagring-Inlamningsuppgift-1\ErrandsDatabase\bin\Debug\ErrandsDatabase.dll
+C:\EC\Datalagring.NET\Datalagring-Inlamningsuppgift-1\ErrandsDatabase\bin\Debug\ErrandsDatabase.pdb

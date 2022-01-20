@@ -1,0 +1,21 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [dbo].[Contact] (Table)
+       [dbo].[Customer] (Table)
+       [dbo].[Errand] (Table)
+       [dbo].[ErrandStatus] (Table)
+       [dbo].[FK_Contact_Customer] (Foreign Key)
+       [dbo].[FK_Contact_Errand] (Foreign Key)
+       [dbo].[FK_Errand_ErrandStatus] (Foreign Key)
+
+** Supporting actions

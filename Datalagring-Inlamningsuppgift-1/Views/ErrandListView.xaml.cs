@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using ErrandModel.ErrandsModels;
+using ErrandModel.ErrandsLogic;
 
 namespace Datalagring_Inlamningsuppgift_1.Views
 {
@@ -20,9 +22,16 @@ namespace Datalagring_Inlamningsuppgift_1.Views
     /// </summary>
     public partial class ErrandListView : UserControl
     {
+        CustomerLogic _customerLogic = new CustomerLogic();
         public ErrandListView()
         {
             InitializeComponent();
+        }
+
+        private void getErrandBtn_Click(object sender, RoutedEventArgs e)
+        {
+            int customerNumber = 1; // Lägg till sökruta.
+            List<Errand> errandList = _customerLogic.SearchErrandByCustomer(customerNumber);
         }
     }
 }
