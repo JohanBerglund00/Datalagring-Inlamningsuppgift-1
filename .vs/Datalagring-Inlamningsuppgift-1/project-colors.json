@@ -15,7 +15,17 @@
       "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
       "DisplayName": "Miscellaneous Files",
       "ColorIndex": -1
+    },
+    "56adf530-52d9-434e-b393-e2301f4da3f1": {
+      "ProjectGuid": "56adf530-52d9-434e-b393-e2301f4da3f1",
+      "DisplayName": "ErrandsDatabase",
+      "ColorIndex": 2
+    },
+    "a19de046-1d22-4bb3-a315-8fadb38f9aa1": {
+      "ProjectGuid": "a19de046-1d22-4bb3-a315-8fadb38f9aa1",
+      "DisplayName": "ErrandModel",
+      "ColorIndex": 3
     }
   },
-  "NextColorIndex": 2
+  "NextColorIndex": 4
 }

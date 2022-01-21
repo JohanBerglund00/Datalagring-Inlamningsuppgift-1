@@ -26,19 +26,11 @@ namespace Datalagring_Inlamningsuppgift_1.Views
         {
             InitializeComponent();
         }
+
         private void submitCustomerButton_Click(object sender, RoutedEventArgs e)
         {
             CustomerLogic customerLogic = new CustomerLogic();
             customerIdValue.Content = customerLogic.AddCustomer(firstNameText.Text, lastNameText.Text, addressText.Text, postNumberText.Text, cityText.Text, phoneNumberText.Text, emailText.Text);
-            // MessageBox.Show($"{firstNameText.Text} {lastNameText.Text} har lagts till i kundlistan!");
         }
-        }
-
-            
-        }
-
-    
-        
-
-    
-
+    }       
+}

@@ -5,11 +5,20 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Datalagring_Inlamningsuppgift_1.Views"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="900" d:DesignWidth="1200">
     <Grid>
-        <ListBox Name="customerList"/>
-        <Button Name="customerSearchBtn" Width="400" Height="100" VerticalAlignment="Top" FontSize="50" Content="Sök" Click="customerSearchBtn_Click"/>
-        <TextBox Name="customerSearchValue" Width="500" Height="100"></TextBox>
-        <Button Name="customerAllBtn" Width="400" Height="100" VerticalAlignment="Bottom" FontSize="50" Content="Hämta alla kunder" Click="customerAllBtn_Click"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="500" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <ListBox Name="customerList" Grid.Column="1" FontSize="25" HorizontalContentAlignment="Center" Margin="0,25,25,25" Background="LightGray" BorderBrush="Gray" BorderThickness="25" />
+        <TextBox Name="customerSearchValue" Grid.Column="0" Width="400" Height="100" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,325,0,0" VerticalContentAlignment="Center" FontSize="50" Background="AliceBlue"></TextBox>
+
+        <Button Name="customerAllBtn" Grid.Column="0" Width="400" Height="100" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,25,0,0" FontSize="45" Content="Hämta alla kunder" Click="customerAllBtn_Click"/>
+        <Button Name="customerSearchBtn" Grid.Column="0" Width="400" Height="100" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,200,0,0" FontSize="50" Content="Sök efter kund" Click="customerSearchBtn_Click"/>
     </Grid>
 </UserControl>

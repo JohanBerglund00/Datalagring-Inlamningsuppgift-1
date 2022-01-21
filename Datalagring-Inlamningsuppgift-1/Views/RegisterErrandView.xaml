@@ -31,14 +31,14 @@
         <TextBlock Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" Margin="50,0,0,0" FontSize="30">Beskrivning:</TextBlock>
         <TextBox x:Name="descriptionText" Grid.Row="2" Grid.Column="1" Width="700" Height="50" Padding="10,3,0,0" FontSize="30" />
 
-        <TextBlock Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" Margin="50,0,0,0" FontSize="30">Skapande av <LineBreak/> ärende:</TextBlock>
-        <TextBlock Grid.Row="3" Grid.Column="1" VerticalAlignment="Center" Margin="115,0,0,0" FontSize="30">Template</TextBlock>
+        <Label Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" Margin="50,0,0,0" FontSize="30" Content="Skapande av &#x0a;ärende"></Label>
+        <Label Name="errandDateCreated" Grid.Row="3" Grid.Column="1" VerticalAlignment="Center" Margin="115,0,0,0" FontSize="30" Content=""></Label>
 
-        <TextBlock Grid.Row="4" Grid.Column="0" VerticalAlignment="Center" Margin="50,0,0,0" FontSize="30">Ändring av <LineBreak/> ärende:</TextBlock>
-        <TextBlock Grid.Row="4" Grid.Column="1" VerticalAlignment="Center" Margin="115,0,0,0" FontSize="30">Template</TextBlock>
+        <Label Grid.Row="4" Grid.Column="0" VerticalAlignment="Center" Margin="50,0,0,0" FontSize="30" Content="Ändring av &#x0a;ärende:"></Label>
+        <Label Name="errandDateUpdated" Grid.Row="4" Grid.Column="1" VerticalAlignment="Center" Margin="115,0,0,0" FontSize="30" Content=""></Label>
 
-        <TextBlock Grid.Row="5" Grid.Column="0" VerticalAlignment="Center" Margin="50,0,0,0" FontSize="30">Status:</TextBlock>
-        <TextBlock Grid.Row="5" Grid.Column="1" VerticalAlignment="Center" Margin="115,0,0,0" FontSize="30">Template</TextBlock>
+        <Label Grid.Row="5" Grid.Column="0" VerticalAlignment="Center" Margin="50,0,0,0" FontSize="30">Status:</Label>
+        <Label Name="errandStatus" Grid.Row="5" Grid.Column="1" VerticalAlignment="Center" Margin="115,0,0,0" FontSize="30"></Label>
 
         <Label Name="errandIdText" Grid.Row="6" Grid.Column="0" VerticalAlignment="Center" Margin="50,0,0,0" FontSize="30" Content="Ärendenummer"></Label>
         <Label Name="errandIdValue" Grid.Row="6" Grid.Column="1" VerticalAlignment="Center" Margin="50,0,0,0" FontSize="30" Content=""></Label>

@@ -29,9 +29,19 @@ namespace Datalagring_Inlamningsuppgift_1.Views
         }
 
         private void getErrandBtn_Click(object sender, RoutedEventArgs e)
-        {
+        { 
             int customerNumber = 1; // Lägg till sökruta.
             List<Errand> errandList = _customerLogic.SearchErrandByCustomer(customerNumber);
+        }
+
+        private void PrintErrands(List<Errand> errands)
+        {
+            errandList.Items.Clear();
+            foreach(Errand errand in errands)
+            {
+                string[] row = { errand.Id.ToString(), errand.Name, errand.Description };
+                errandList.Items.Add(errand.Id.ToString() + ", " + errand.Name + ", " + errand.Description); ;
+            }
         }
     }
 }

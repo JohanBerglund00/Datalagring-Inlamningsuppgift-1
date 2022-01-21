@@ -45,10 +45,8 @@ namespace Datalagring_Inlamningsuppgift_1.Views
 
         private void customerAllBtn_Click(object sender, RoutedEventArgs e)
         {
-            
             List<Customer> customers = _customerLogic.GetCustomers();
             PrintCustomers(customers);
-            
         }
 
         private void PrintCustomers(List<Customer> customers)
@@ -59,7 +57,6 @@ namespace Datalagring_Inlamningsuppgift_1.Views
                 string[] row = { customer.Id.ToString(), customer.FirstName, customer.LastName };
 
                 customerList.Items.Add(customer.Id.ToString() + ", " + customer.LastName + ", " + customer.FirstName);
-
             }
         }
       

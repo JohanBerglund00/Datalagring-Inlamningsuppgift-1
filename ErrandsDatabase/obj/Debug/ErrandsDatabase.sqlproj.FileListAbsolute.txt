@@ -3,3 +3,4 @@ C:\EC\Datalagring.NET\Datalagring-Inlamningsuppgift-1\ErrandsDatabase\obj\Debug\
 C:\EC\Datalagring.NET\Datalagring-Inlamningsuppgift-1\ErrandsDatabase\obj\Debug\ErrandsDatabase.pdb
 C:\EC\Datalagring.NET\Datalagring-Inlamningsuppgift-1\ErrandsDatabase\bin\Debug\ErrandsDatabase.dll
 C:\EC\Datalagring.NET\Datalagring-Inlamningsuppgift-1\ErrandsDatabase\bin\Debug\ErrandsDatabase.pdb
+C:\EC\Datalagring.NET\Datalagring-Inlamningsuppgift-1\ErrandsDatabase\obj\Debug\ErrandsDatabase.sqlproj.AssemblyReference.cache
