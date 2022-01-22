@@ -34,10 +34,15 @@ namespace Datalagring_Inlamningsuppgift_1.Views
             List<Errand> errandList = _customerLogic.SearchErrandByCustomer(customerNumber);
         }
 
+        private void getErrandSearchBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
         private void PrintErrands(List<Errand> errands)
         {
             errandList.Items.Clear();
-            foreach(Errand errand in errands)
+            foreach (Errand errand in errands)
             {
                 string[] row = { errand.Id.ToString(), errand.Name, errand.Description };
                 errandList.Items.Add(errand.Id.ToString() + ", " + errand.Name + ", " + errand.Description); ;
