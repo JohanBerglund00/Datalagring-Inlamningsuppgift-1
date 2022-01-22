@@ -54,7 +54,7 @@ namespace Datalagring_Inlamningsuppgift_1.Views
             customerList.Items.Clear();
             foreach (Customer customer in customers)
             {
-                string[] row = { customer.Id.ToString(), customer.FirstName, customer.LastName };
+                
 
                 customerList.Items.Add(customer.Id.ToString() + ", " + customer.LastName + ", " + customer.FirstName);
             }
