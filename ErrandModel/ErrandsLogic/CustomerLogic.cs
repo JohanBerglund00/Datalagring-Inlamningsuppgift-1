@@ -45,10 +45,10 @@ namespace ErrandModel.ErrandsLogic
             return errandNumber;
         }
 
-        public List<Errand> SearchErrandByCustomer(int customerId)
+        public List<Errand> SearchErrandById(int errandId)
         {
             var queryContacts = from contact in _context.Contacts
-                               where contact.Customer == customerId
+                               where contact.Errand == errandId
                                select contact;
             List<Contact> result = queryContacts.ToList();
 
@@ -85,6 +85,31 @@ namespace ErrandModel.ErrandsLogic
                                  orderby cust.Id ascending
                                  select cust;
             return queryCustomers.ToList();
+        }
+
+        public List<ErrandStatus> GetStatuses()
+        {
+            var rows = _context.ErrandStatuses.ToList();
+            return rows;
+        }
+
+        public List<Errand> GetErrands()
+        {
+            var rows = _context.Errands.ToList();
+            foreach(var errand in rows)
+            {
+                errand.Contacts = GetContactsByErrandId(errand.Id);
+            }
+            return rows;
+        }
+
+        List<Contact> GetContactsByErrandId(int errandId)
+        {
+            var queryContacts = from cont in _context.Contacts
+                                 where cont.Errand == errandId
+                                 orderby cont.Id ascending
+                                 select cont;
+            return queryContacts.ToList();
         }
     }
 }

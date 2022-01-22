@@ -29,12 +29,26 @@ namespace Datalagring_Inlamningsuppgift_1.Views
             InitializeComponent();
         }
 
+
         private void submitButton_Click(object sender, RoutedEventArgs e)
         {
             if(int.TryParse(customerText.Text, out int id))
             {
                 errandIdValue.Content = _customerLogic.AddErrand(id, errandNameText.Text, descriptionText.Text).ToString();
             }
+        }
+
+        private void UserControl_Initialized(object sender, EventArgs e)
+        {
+            List<ErrandStatus> errandStatuses = _customerLogic.GetStatuses();
+            foreach(ErrandStatus status in errandStatuses)
+            {
+                statusComboBox.Items.Add(status.Id + ", " + status.Status);
+            }
+
+            statusComboBox.SelectedIndex = 0;
+            errandDateCreated.Content = DateTime.Now.Date;
+            errandDateUpdated.Content = DateTime.Now.Date;
         }
     }
 }

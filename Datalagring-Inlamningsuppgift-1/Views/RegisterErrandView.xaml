@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Datalagring_Inlamningsuppgift_1.Views"
              mc:Ignorable="d" 
-             d:DesignHeight="900" d:DesignWidth="1200">
+             d:DesignHeight="900" d:DesignWidth="1200" Initialized="UserControl_Initialized">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="275"/>
@@ -31,14 +31,15 @@
         <TextBlock Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" Margin="50,0,0,0" FontSize="30">Beskrivning:</TextBlock>
         <TextBox x:Name="descriptionText" Grid.Row="2" Grid.Column="1" Width="700" Height="50" Padding="10,3,0,0" FontSize="30" />
 
-        <Label Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" Margin="50,0,0,0" FontSize="30" Content="Skapande av &#x0a;ärende"></Label>
+        <Label Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" Margin="50,0,0,0" FontSize="30" Content="Skapande av &#x0a;ärende:"></Label>
         <Label Name="errandDateCreated" Grid.Row="3" Grid.Column="1" VerticalAlignment="Center" Margin="115,0,0,0" FontSize="30" Content=""></Label>
 
         <Label Grid.Row="4" Grid.Column="0" VerticalAlignment="Center" Margin="50,0,0,0" FontSize="30" Content="Ändring av &#x0a;ärende:"></Label>
         <Label Name="errandDateUpdated" Grid.Row="4" Grid.Column="1" VerticalAlignment="Center" Margin="115,0,0,0" FontSize="30" Content=""></Label>
 
         <Label Grid.Row="5" Grid.Column="0" VerticalAlignment="Center" Margin="50,0,0,0" FontSize="30">Status:</Label>
-        <Label Name="errandStatus" Grid.Row="5" Grid.Column="1" VerticalAlignment="Center" Margin="115,0,0,0" FontSize="30"></Label>
+        <ComboBox Name="statusComboBox" Grid.Row="5" Grid.Column="1"></ComboBox>
+        <!--<Label Name="errandStatus" Grid.Row="5" Grid.Column="1" VerticalAlignment="Center" Margin="115,0,0,0" FontSize="30"></Label>-->
 
         <Label Name="errandIdText" Grid.Row="6" Grid.Column="0" VerticalAlignment="Center" Margin="50,0,0,0" FontSize="30" Content="Ärendenummer"></Label>
         <Label Name="errandIdValue" Grid.Row="6" Grid.Column="1" VerticalAlignment="Center" Margin="50,0,0,0" FontSize="30" Content=""></Label>

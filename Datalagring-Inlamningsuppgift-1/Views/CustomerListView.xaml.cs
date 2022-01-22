@@ -51,13 +51,9 @@ namespace Datalagring_Inlamningsuppgift_1.Views
 
         private void PrintCustomers(List<Customer> customers)
         {
-            customerList.Items.Clear();
-            foreach (Customer customer in customers)
-            {
-                
-
-                customerList.Items.Add(customer.Id.ToString() + ", " + customer.LastName + ", " + customer.FirstName);
-            }
+            customerList.ItemsSource = customers;
+            var col = customerList.Columns.Single(c => c.Header.ToString() == "Contacts");
+            col.Visibility = Visibility.Collapsed;
         }
       
     }

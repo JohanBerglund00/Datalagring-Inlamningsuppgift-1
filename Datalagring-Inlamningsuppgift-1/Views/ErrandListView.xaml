@@ -17,9 +17,12 @@
 
         <Button Name="getErrandBtn" Grid.Column="0" Width="400" Height="100" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,25,0,0" FontSize="45" Background="LightSteelBlue" BorderBrush="Black" BorderThickness="3" Content="Hämta alla ärenden" Click="getErrandBtn_Click"></Button>
 
-        <Button Name="getErrandSearchBtn" Grid.Column="0" Width="400" Height="100" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,200,0,0" FontSize="45" Background="LightSteelBlue" BorderBrush="Black" BorderThickness="3" Content="Sök efter ärende" Click="getErrandSearchBtn_Click"></Button>
+        <Button Name="getErrandSearchBtn" Grid.Column="0" Width="400" Height="100" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,200,0,0" FontSize="38" Background="LightSteelBlue" BorderBrush="Black" BorderThickness="3" Content="Sök på ärendenummer" Click="getErrandSearchBtn_Click"></Button>
         <TextBox Name="getErrandSearchValue" Grid.Column="0" Width="400" Height="100" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,325,0,0" VerticalContentAlignment="Center" FontSize="50" Background="AliceBlue"></TextBox>
 
-        <ListBox Name="errandList" Grid.Column="1" FontSize="25" HorizontalContentAlignment="Center" Margin="0,25,25,25" Background="LightGray" BorderBrush="Gray" BorderThickness="25" />
+        <TextBlock Name="firstName" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" Margin="50,0,0,0" FontSize="30">Förnamn:</TextBlock>
+
+        <DataGrid Name="errandListDataGrid" Grid.Column="1" Width="700" Height="900" SelectionChanged="errandListDataGrid_SelectionChanged"></DataGrid>
+        <!--<ListBox Name="errandList" Grid.Column="1" FontSize="25" HorizontalContentAlignment="Center" Margin="0,25,25,25" Background="LightGray" BorderBrush="Gray" BorderThickness="25" />-->
     </Grid>
 </UserControl>

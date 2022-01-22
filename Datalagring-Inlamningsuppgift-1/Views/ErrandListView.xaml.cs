@@ -29,23 +29,52 @@ namespace Datalagring_Inlamningsuppgift_1.Views
         }
 
         private void getErrandBtn_Click(object sender, RoutedEventArgs e)
-        { 
-            int customerNumber = 1; // Lägg till sökruta.
-            List<Errand> errandList = _customerLogic.SearchErrandByCustomer(customerNumber);
+        {
+            List<Errand> errandList = _customerLogic.GetErrands();
+            errandListDataGrid.ItemsSource = GetErrandViews(errandList);
+            var col = errandListDataGrid.Columns.Single(c => c.Header.ToString() == "CustomerId");
+            col.Visibility = Visibility.Collapsed;
+            errandListDataGrid.SelectedIndex = 0;
         }
 
         private void getErrandSearchBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            
+            if(int.TryParse(getErrandSearchValue.Text, out int errandId))
+            {
+                List<Errand> errandList = _customerLogic.SearchErrandById(errandId);
+                
+                errandListDataGrid.ItemsSource = GetErrandViews(errandList);
+                var col = errandListDataGrid.Columns.Single(c => c.Header.ToString() == "CustomerId");
+                col.Visibility = Visibility.Collapsed;
+                errandListDataGrid.SelectedIndex = 0;
+            }
+            
+            
         }
 
-        private void PrintErrands(List<Errand> errands)
+        private List<ErrandView> GetErrandViews(List<Errand> errandList)
         {
-            errandList.Items.Clear();
-            foreach (Errand errand in errands)
+            List<ErrandView> errandListView = new List<ErrandView>();
+            foreach (Errand errand in errandList)
             {
-                string[] row = { errand.Id.ToString(), errand.Name, errand.Description };
-                errandList.Items.Add(errand.Id.ToString() + ", " + errand.Name + ", " + errand.Description); ;
+                ErrandView ev = new ErrandView(errand);
+                errandListView.Add(ev);
+            }
+            return errandListView;
+        }
+
+        private void errandListDataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            ErrandView ev = (ErrandView)errandListDataGrid.SelectedItems[0];
+            if (int.TryParse(ev.CustomerId, out int id))
+            {
+                List<Customer> customerList = _customerLogic.SearchCustomerById(id);
+                if(customerList.Count > 0)
+                {
+                    Customer customer = customerList.First();
+                    firstName.Text = customer.FirstName;
+                }
             }
         }
     }
