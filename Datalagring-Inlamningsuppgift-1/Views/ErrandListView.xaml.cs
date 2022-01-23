@@ -74,6 +74,10 @@ namespace Datalagring_Inlamningsuppgift_1.Views
                 {
                     Customer customer = customerList.First();
                     firstName.Text = customer.FirstName;
+                    lastName.Text = customer.LastName;
+                    email.Text = customer.Email;
+                    phone.Text = customer.Phone;
+                    address.Text = customer.Address;
                 }
             }
         }

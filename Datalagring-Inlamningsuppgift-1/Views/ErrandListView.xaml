@@ -5,24 +5,35 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Datalagring_Inlamningsuppgift_1.Views"
              mc:Ignorable="d" 
-             d:DesignHeight="900" d:DesignWidth="1200">
+             d:DesignHeight="900" d:DesignWidth="1700">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="500" />
-            <ColumnDefinition />
+            <ColumnDefinition Width="1200" />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
+            <RowDefinition Height="100" />
+            <RowDefinition Height="100" />
+            <RowDefinition Height="100" />
+            <RowDefinition Height="100" />
+            <RowDefinition Height="100" />
         </Grid.RowDefinitions>
 
-        <Button Name="getErrandBtn" Grid.Column="0" Width="400" Height="100" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,25,0,0" FontSize="45" Background="LightSteelBlue" BorderBrush="Black" BorderThickness="3" Content="Hämta alla ärenden" Click="getErrandBtn_Click"></Button>
+        <StackPanel Grid.Column="0" Grid.Row="0" Grid.RowSpan="1" />
 
-        <Button Name="getErrandSearchBtn" Grid.Column="0" Width="400" Height="100" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,200,0,0" FontSize="38" Background="LightSteelBlue" BorderBrush="Black" BorderThickness="3" Content="Sök på ärendenummer" Click="getErrandSearchBtn_Click"></Button>
-        <TextBox Name="getErrandSearchValue" Grid.Column="0" Width="400" Height="100" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,325,0,0" VerticalContentAlignment="Center" FontSize="50" Background="AliceBlue"></TextBox>
+        <Button Name="getErrandBtn" Grid.Column="0" Width="400" Height="100" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,10,0,0" FontSize="45" Background="LightSteelBlue" BorderBrush="Black" BorderThickness="3" Content="Hämta alla ärenden" Click="getErrandBtn_Click"></Button>
 
-        <TextBlock Name="firstName" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" Margin="50,0,0,0" FontSize="30">Förnamn:</TextBlock>
+        <Button Name="getErrandSearchBtn" Grid.Column="0" Width="400" Height="100" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,160,0,0" FontSize="38" Background="LightSteelBlue" BorderBrush="Black" BorderThickness="3" Content="Sök på ärendenummer" Click="getErrandSearchBtn_Click"></Button>
+        <TextBox Name="getErrandSearchValue" Grid.Column="0" Width="400" Height="100" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,275,0,0" VerticalContentAlignment="Center" FontSize="50" Background="AliceBlue"></TextBox>
 
-        <DataGrid Name="errandListDataGrid" Grid.Column="1" Width="700" Height="900" SelectionChanged="errandListDataGrid_SelectionChanged"></DataGrid>
-        <!--<ListBox Name="errandList" Grid.Column="1" FontSize="25" HorizontalContentAlignment="Center" Margin="0,25,25,25" Background="LightGray" BorderBrush="Gray" BorderThickness="25" />-->
+        <TextBlock Name="firstName" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30" ></TextBlock>
+        <TextBlock Name="lastName" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30" ></TextBlock>
+        <TextBlock Name="email" Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30" ></TextBlock>
+        <TextBlock Name="phone" Grid.Row="4" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30" ></TextBlock>
+        <TextBlock Name="address" Grid.Row="5" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30" ></TextBlock>
+
+        <DataGrid Name="errandListDataGrid" Grid.Column="1" Width="1200" Height="900" FontSize="25" Background="LightGray" BorderBrush="Gray" BorderThickness="25" Grid.RowSpan="6" SelectionChanged="errandListDataGrid_SelectionChanged"></DataGrid>
+        
     </Grid>
 </UserControl>

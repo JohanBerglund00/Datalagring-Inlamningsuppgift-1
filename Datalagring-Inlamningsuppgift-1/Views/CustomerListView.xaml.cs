@@ -55,6 +55,5 @@ namespace Datalagring_Inlamningsuppgift_1.Views
             var col = customerList.Columns.Single(c => c.Header.ToString() == "Contacts");
             col.Visibility = Visibility.Collapsed;
         }
-      
     }
 }
