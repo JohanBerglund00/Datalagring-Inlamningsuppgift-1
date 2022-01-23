@@ -66,18 +66,21 @@ namespace Datalagring_Inlamningsuppgift_1.Views
 
         private void errandListDataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            ErrandView ev = (ErrandView)errandListDataGrid.SelectedItems[0];
-            if (int.TryParse(ev.CustomerId, out int id))
+            if(errandListDataGrid.SelectedItems.Count > 0)
             {
-                List<Customer> customerList = _customerLogic.SearchCustomerById(id);
-                if(customerList.Count > 0)
+                ErrandView ev = (ErrandView)errandListDataGrid.SelectedItems[0];
+                if (int.TryParse(ev.CustomerId, out int id))
                 {
-                    Customer customer = customerList.First();
-                    firstName.Text = customer.FirstName;
-                    lastName.Text = customer.LastName;
-                    email.Text = customer.Email;
-                    phone.Text = customer.Phone;
-                    address.Text = customer.Address;
+                    List<Customer> customerList = _customerLogic.SearchCustomerById(id);
+                    if (customerList.Count > 0)
+                    {
+                        Customer customer = customerList.First();
+                        firstName.Text = customer.FirstName;
+                        lastName.Text = customer.LastName;
+                        email.Text = customer.Email;
+                        phone.Text = customer.Phone;
+                        address.Text = customer.Address;
+                    }
                 }
             }
         }
