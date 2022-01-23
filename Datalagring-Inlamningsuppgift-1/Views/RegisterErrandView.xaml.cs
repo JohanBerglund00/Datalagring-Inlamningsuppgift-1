@@ -43,12 +43,12 @@ namespace Datalagring_Inlamningsuppgift_1.Views
             List<ErrandStatus> errandStatuses = _customerLogic.GetStatuses();
             foreach(ErrandStatus status in errandStatuses)
             {
-                statusComboBox.Items.Add(status.Id + ", " + status.Status);
+                statusComboBox.Items.Add(status.Id + ". " + status.Status);
             }
 
             statusComboBox.SelectedIndex = 0;
-            errandDateCreated.Content = DateTime.Now.Date;
-            errandDateUpdated.Content = DateTime.Now.Date;
+            errandDateCreated.Content = DateTime.Now.ToString("dd/MM/yyyy HH:mm");
+            errandDateUpdated.Content = DateTime.Now.ToString("dd/MM/yyyy HH:mm");
         }
     }
 }
